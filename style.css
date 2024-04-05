@@ -10,9 +10,93 @@
 
 body {
     font-family: "Chivo" , sans-serif;
+    background-color: var(--dark-black);
+    position: relative;
+}
+
+h1 {
+    color: var(--light-green);
+    text-transform: uppercase;
+    font-weight: 300;
+    
+}
+
+h1 span {
+    color: var(--White);
+    font-size: inherit;
+}
+
+p {
+    color: var(--White);
+    font-weight: 300;
+}
+
+img {
+    display: block;
+}
+
+input {
+    margin-top: 1em;
+    padding: 0.5em 1em 1em 1em ;
+    background-color: var(--dark-blue);
+    border: none;
+    color: var(--White);
+    font-weight: bold;
+}
+
+input:placeholder-shown {
+    opacity: 0.5;
+}
+
+input :focus,
+input::after{
+    outline: none;
+}
+.logo{
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
 }
 
 @media(min-width: 375px) {
+
+    body{
+        padding: 50px 15px;
+    }
+
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-image: url(assets/image-host.jpg);
+        z-index: -1;
+        opacity: 0.1;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 26px;
+        line-height: 36px;
+        text-align: center;
+        margin: 26px 0;
+    }
+
+    .logo{
+        margin-right: auto;
+        margin-right: auto;
+    }
+    .container {
+        margin: 52px 0;
+    }
 
 }
 
