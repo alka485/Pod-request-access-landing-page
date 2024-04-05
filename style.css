@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --light-green:#54E6AF;
+    --dark-blue:#2C344B;
+    --dark-black:#121725;
+    --ultra-violet:#5A668A;
+    --peri-winkle:#C2CBE5;
+    --White : #FFFFFF;
+}
+
+body {
+    font-family: "Chivo" , sans-serif;
+}
+
+@media(min-width: 375px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
