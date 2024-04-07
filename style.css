@@ -8,13 +8,127 @@
     --White : #FFFFFF;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Chivo" , sans-serif;
+    font-size: 18px;
+    background-image: url("./assets/mobile/image-host.jpg");
     background-color: var(--dark-black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--White);
+    background-blend-mode: multiply;
+    overflow-x: hidden;
+}
+
+.container{
+    background-color: red;
+    width: 78.5vw;
+    margin: auto;
+    padding-bottom: 94px;
     position: relative;
 }
 
-body::before {
+.header_container svg{
+    background-color: blue;
+    margin: 62px auto;
+    /* display: block; */
+}
+
+main {
+    background-color: purple;
+    position: relative;
+    top: 25px;
+}
+
+h1{
+    font-weight: 100;
+    font-size: 1.65rem;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--light-green);
+}
+
+h1 span {
+    color: var(--White);
+}
+
+p {
+    color: var(--peri-winkle);
+    text-align: center;
+    margin-top: 16px;
+    line-height: 25px;
+    font-size: .933rem;
+    font-weight: 100;
+}
+
+.socials {
+    
+        background-color: beige;
+        display: flex;
+        margin: 33px auto 0;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        align-items: baseline;
+}
+
+img.spotify{
+    width: 17.2%;
+}
+
+img.apple {
+    width: 14%;
+}
+
+img.google{
+    width: 22.28%;
+}
+
+img.pocket{
+    width: 23.5%;
+}
+
+input[type=submit],
+label {
+    display: block;
+}
+
+form {
+    margin-top: 48px;
+    position: relative;
+}
+
+input[type=submit]{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--light-green);
+    border-radius: 30px;
+    border: none;
+    line-height: 28px;
+    font-size: 0.93rem;
+    color: #121725;
+    font-weight: 600;
+}
+
+input.submitDocs{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    line-height: 28px;
+    padding-left: 25px;
+    margin-bottom: 16px;
+}
+
+
+
+/* body::before {
     content: '';
     position: absolute;
     background-repeat: no-repeat;
@@ -225,4 +339,4 @@ input::after{
 
     }
 
-}
+} */
