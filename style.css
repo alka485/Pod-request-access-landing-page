@@ -124,20 +124,105 @@ input::after{
 
 @media (min-width: 768px) {
 
+    body {
+        padding: 50px 30px;
+    }
+
     body::before {
         top: 0;
         left: 40%;
         right: 0;
         opacity: 1;
+        background-image: url(./assets/image-host.jpg);
+
+    }
+
+    body::after{
+        content: '';
+        display: block;
+        width: 230px;
+        height: 100px;
+        background-image: url(./assets/bg-pattern-dots.svg);
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 120px 0 50px;
+        margin-right: 50px;
+        padding: 50px 20px;
+        text-align: left;
+        background-color: var(--ultra-violet);
+    }
+
+    h1 {
+        
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    p{
+        width: 75%;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    form {
+        position: relative;
+        width: 75%;
+    }
+
+    input[type=submit] {
+        position:absolute;
+        top: 0;
+        left: 60%;
+        right: 0;
+        width: 40%;
 
     }
 
     .logo{
         width: 20%;
+        margin-left: 0%;
+    }
+    .container{
+        order: 3;
+        width: 75%;
+    }
+
+    main{
+        background-color: var(--dark-black);
     }
 
 }
 
 @media (min-width:1440px) {
+    body{
+        padding : 130px 160px;
+
+    }
+
+    body::before{
+        top: 130px;
+        left: 40%;
+        right: -20%;
+        background-image: url(./assets/image-host.jpg);
+    }
+
+    body::after{
+        position: absolute;
+        top: 80%;
+        right: 0;
+
+    }
+
+    main {
+        width: 60%
+    }
+    h1{
+        font-size:50px ;
+        line-height: 62px;
+
+    }
 
 }
