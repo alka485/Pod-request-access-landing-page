@@ -17,15 +17,13 @@
 body {
     font-family: "Chivo" , sans-serif;
     font-size: 18px;
-    background-image: url("./assets/desktop/image-host.jpg");
+    background-image: url("./assets/mobile/image-host.jpg");
     background-color: var(--dark-black);
     background-repeat: no-repeat; 
     background-size: cover;
     color: var(--White);
-    background-blend-mode: normal; 
-     overflow-x: hidden;
-     
-     
+    background-blend-mode:multiply; 
+     overflow-x: hidden;      
 }
 
 .container{
@@ -33,6 +31,7 @@ body {
     margin: auto;
     padding-bottom: 94px;
     position: relative;
+    
 }
 
 .header_container svg{
